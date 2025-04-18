@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about-me.html">About Me</a> |
+      <a href="contact.html">Contact Me</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="favorites.html">My favorites</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Me</h1>
+    <style>
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          width: 300px;
+          margin-left: 20px; 
+        }
+      
+        label {
+          font-weight: bold;
+        }
+      
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          width: 100%;
+          box-sizing: border-box;
+        }
+      
+        
+        .radio-group,
+        .checkbox-group {
+          display: flex;
+          gap: 20px;  
+          align-items: center; /
+        }
+      
+        input[type="radio"],
+        input[type="checkbox"] {
+          margin-right: 5px;
+        }
+      
+        input[type="submit"] {
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      
+        input[type="submit"]:hover {
+          background-color: #45a049;
+        }
+      </style>
+      
+
+    <<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+        <label for="Full name">Name</label>
+        <input type="text" id="Full name" name=" Full name" placeholder="Write Your full Name" required>
+      
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Write Your Email" required>
+      
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+      
+        <label>Gender</label>
+        <div class="radio-group">
+          <label for="male">
+            <input type="radio" name="gender" value="male" id="male"> Male
+          </label>
+          <label for="female">
+            <input type="radio" name="gender" value="female" id="female"> Female
+          </label>
+        </div>
+      
+        <label>Interests</label>
+        <div class="checkbox-group">
+          <label for="tech">
+            <input type="checkbox" name="interests" value="tech" id="tech"> Tech
+          </label>
+          <label for="art">
+            <input type="checkbox" name="interests" value="art" id="art"> Art
+          </label>
+          <label for="music">
+            <input type="checkbox" name="interests" value="music" id="music"> Music
+          </label>
+        </div>
+      
+        <input type="submit" value="Submit">
+      </form>
+      
+      
+    <p>Or email me directly at: <a href="mailto:masoma.poya1995@gmil.com">masoma.poya1995@gmil.com</a></p>
+  </main>
+
+</body>
+</html>
